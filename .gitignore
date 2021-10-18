@@ -1,3 +1,6 @@
 .vscode/
 
 .ipynb_checkpoints*
+
+# virtual environment
+/env
