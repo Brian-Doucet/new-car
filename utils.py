@@ -17,7 +17,7 @@ def combine_data(files):
     """Take a list of files and return a DataFrame"""
     df_list = [pd.read_csv(file) for file in files]
     
-    # Column to indicate which source file the data originated
+    # For QA purposes we want to know where the data came from
     for dataframe, filename in zip(df_list, files):
         dataframe['source_file'] = filename.split('/')[-1]
     
